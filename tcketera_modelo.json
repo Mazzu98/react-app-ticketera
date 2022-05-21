@@ -1,0 +1,72 @@
+{
+  "tickets":{
+    "operacion":"DESPERFECTO | COAMBIO_DE_PLAN | DAR_DE_BAJA | DAR_DE_ALTA",
+    "descripcion":"ljfdhs sdljdshf lkdjk",
+    "creadoA": "Date",
+    "resueltoA": "Date",
+    "resuelto": false,
+    "cliente":{
+      "idCliente":"idCliente",
+      "dni":"42830267",
+      "nombre":"nombre",
+      "apellido":"apellido",
+      "plan":{
+        "nombre":"normal | SuperPack1 | SuperPackFull",
+        "cantCanales": 33,
+        "canales":["canal 1", "canal 2", "canal 3", "canal 4", "canal 5"]
+      },
+      "posicion": {
+        "type": "Point",
+        "coordinates": [-73.856077, 40.848447],
+        "cp":"1409",
+        "descripcion":"dksufybfk  kdfhisfy kjhdfoy sdkjfh "
+      }
+    },
+    "derivaciones":[
+      {
+        "area":"ATENCIÓN AL CLIENTE | SERVICIO TÉCNICO | SERVICIOS FINANCIEROS | ETC",
+        "hora":"Date",
+        "encargado":{
+          "id":"id",
+          "dni":"42830267",
+          "nombre":"nombre",
+          "apellido":"apellido"
+        },
+        "location": {
+          "type": "Point",
+          "coordinates": [-73.856077, 40.848447],
+          "cp":"1409",
+          "descripcion":"dksufybfk  kdfhisfy kjhdfoy sdkjfh "
+        },
+        "operacion":"lo que hizo?"
+      }
+    ]
+  },
+  
+  "usuarios" : {
+    "id":"id",
+      "dni":"42830267",
+      "nombre":"nombre",
+      "apellido":"apellido",
+      "cliente": true,
+      "empleado": true,
+      "plan":{
+        "nombre":"normal | SuperPack1 | SuperPackFull",
+        "cantCanales": 33,
+        "canales":["canal 1", "canal 2", "canal 3", "canal 4", "canal 5"]
+      },
+      "posicion": {
+        "type": "Point",
+        "coordinates": [-73.856077, 40.848447],
+        "cp":"1409",
+        "descripcion":"dksufybfk  kdfhisfy kjhdfoy sdkjfh "
+      }
+  },
+
+  "planes":{
+    "nombre":"normal | SuperPack1 | SuperPackFull",
+    "cantCanales": 33,
+    "canales":["canal 1", "canal 2", "canal 3", "canal 4", "canal 5"]
+  }
+}
+
