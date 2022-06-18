@@ -5,6 +5,7 @@ const Users = require('./api/users');
 const Planes = require('./api/planes');
 const cors = require('cors');
 const Tickets = require('./api/tickets');
+const Barrios = require('./api/barrios');
 
 require('dotenv').config();
 
@@ -17,6 +18,7 @@ app.use(express.raw());
 app.use('/usuarios', Users);
 app.use('/planes', Planes);
 app.use('/tickets', Tickets);
+app.use('/barrios', Barrios);
 
 mongoose.connect(
   `mongodb://${process.env.DB_HOST}/${process.env.DB}`,
