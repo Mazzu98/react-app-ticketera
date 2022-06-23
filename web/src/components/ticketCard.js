@@ -22,8 +22,6 @@ const TicketCard = ({ticket}) =>{
                 )  
           })}
         </div>
-        
-                
       </div>
     </div>
   )

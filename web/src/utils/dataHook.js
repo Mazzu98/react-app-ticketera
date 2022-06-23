@@ -5,10 +5,12 @@ const useGetData = (endpoint) =>{
   const [data, setData] = useState();
 
   useEffect(()=>{
-    fetch(apiUrl + endpoint).then(async (res)=>{
-      setData(await res.json())
-    })
-  },[])
+    if(endpoint){
+      fetch(apiUrl + endpoint).then(async (res)=>{
+        setData(await res.json())
+      })
+    }
+  },[endpoint])
 
   return data;
 }

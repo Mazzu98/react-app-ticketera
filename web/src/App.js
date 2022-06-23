@@ -1,7 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
+import Clientes from './pages/clientes';
+import Control from './pages/control';
 import Home from './pages/home';
+import Zonales from './pages/zonales';
 
 function App() {
   return (
@@ -18,9 +21,9 @@ function App() {
       
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/control" element={<h1 style={{color: "black"}}>lshdfkjshfsdf dsf sdf dsffkjasdfhmgsdhm</h1>} />
-          <Route path="/zona" element={<h1 style={{color: "black"}}>lshdfkjshfsdf dsf sdf dsffkjasdfdsffsdfhmgsdhm</h1>} />
-          <Route path="/clientes" element={<h1 style={{color: "black"}}>lshdfkjshfkjasdfhmgsddddfdfdfdfdfdfhm</h1>} />
+          <Route path="/control" element={<Control/>} />
+          <Route path="/zona" element={<Zonales/>} />
+          <Route path="/clientes" element={<Clientes/>} />
         </Routes>
       </BrowserRouter>
     </div>
