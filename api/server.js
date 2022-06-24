@@ -21,7 +21,8 @@ app.use('/tickets', Tickets);
 app.use('/barrios', Barrios);
 
 mongoose.connect(
-  `mongodb://${process.env.DB_HOST}/${process.env.DB}`,
+  //`mongodb://${process.env.DB_HOST}/${process.env.DB}`,
+  `mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@${process.env.DB_HOST}/${process.env.DB}`,
   {useNewUrlParser: true},
   (err, res) =>{
     err && console.log('Error conectando a la db');
